@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run planet app",
+            "type": "python",
+            "request": "launch",
+            "program": "./cli.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["./flow_configs"]
+        },
+        {
+            "name": "run planet app ECS runner",
+            "type": "python",
+            "request": "launch",
+            "program": "./cli.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+        },
+        {
+            "name": "module run_solar_system locally",
+            "type": "python",
+            "request": "launch",
+            "module": "hello_planet.worker_flow",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+
+    ]
+}
