@@ -40,7 +40,7 @@ def hello_solar_system():
 
         prefect_logger.info(f"launching subflow for {config_json['planet']}")
         run_deployment(
-            name="hello-planet/wizard-deploy2",
+            name="hello-planet/wizard-deploy3",
             parameters={"planet": config_json['planet']},
             flow_run_name=f"{config_json['planet']}--{datetime.datetime.now().isoformat()}",
             timeout=5,
