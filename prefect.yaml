@@ -15,12 +15,12 @@ push: null
 # pull section allows you to provide instructions for cloning this project in remote locations
 pull:
 - prefect.deployments.steps.git_clone:
-    repository: git@github.com:jdduprey/hello-planet.git
+    repository: https://github.com/jdduprey/hello-planet.git
     branch: main
 
 # the deployments section allows you to provide configuration for deploying flows
 deployments:
-- name: wizard-deploy3
+- name: wizard-deploy-http
   version: null
   tags: []
   description: null
